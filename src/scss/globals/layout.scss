@@ -1,0 +1,77 @@
+@use "../util/" as *;
+@use "fonts";
+@use "colors";
+
+// Reset
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+	font-family: fonts.$font-family;
+	background: colors.$very-pale-cyan;
+	color: colors.$very-dark-cyan;
+	font-size: 1.5rem;
+}
+
+.container {
+	padding: 0 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+
+.grid {
+	display: grid;
+	-ms-grid-columns: 100%;
+	grid-template-columns: 100%;
+
+	@include breakpoint(medium) {
+		display: grid;
+		grid-template-columns: 250px 1fr;
+	}
+
+	gap: 2rem;
+}
+
+.attribution {
+	margin-top: 4rem;
+	font-size: 1.1rem;
+	text-align: center;
+	color: colors.$very-dark-cyan;
+
+	a {
+		color: colors.$pink;
+	}
+}
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.mt-10 {
+	margin-top: 10rem;
+}
+
+.times {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 2rem;
+
+	@include breakpoint(large) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	@include breakpoint(medium) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
