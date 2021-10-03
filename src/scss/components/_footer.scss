@@ -1,0 +1,21 @@
+@use "../globals/colors.scss";
+
+.footer {
+	background: colors.$very-dark-cyan;
+	color: white;
+
+	&__logo {
+		filter: brightness(0) invert(1);
+		width: 20rem;
+	}
+
+	&__item {
+		display: flex;
+		gap: 2rem;
+	}
+
+	&__socials {
+		display: flex;
+		gap: 2rem;
+	}
+}

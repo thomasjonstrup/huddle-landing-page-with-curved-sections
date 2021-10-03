@@ -1,0 +1,55 @@
+@use "../util/" as *;
+@use "../globals/" as *;
+
+.btn {
+	display: inline-flex;
+	border-radius: 1.5rem;
+	padding: 0.5rem 2rem;
+	outline: none;
+	border: none;
+	transition: 0.23s ease-in-out;
+	cursor: pointer;
+
+	justify-content: center;
+
+	/* 	@include breakpoint(medium) {
+		justify-content: flex-start;
+	}
+ */
+	&--primary {
+		background: $pink;
+		padding: 15px 60px 15px 60px;
+		font-size: 1.2rem;
+		border-radius: 40px;
+		font-weight: 600;
+		color: white;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+		&:hover {
+			background: $light-pink;
+			border: 1px solid $light-pink;
+		}
+	}
+
+	&--square {
+		border-radius: 8px;
+		font-size: 1.4rem;
+		font-weight: 700;
+		padding: 15px 40px 15px 40px;
+	}
+
+	&--border {
+		background: none;
+		color: $pink;
+		border: 1px solid $pink;
+		font-weight: 400;
+
+		&:hover {
+			color: $light-pink;
+			border: 1px solid $light-pink;
+		}
+	}
+
+	&--active {
+		color: white;
+	}
+}

@@ -1,0 +1,11 @@
+.header {
+	margin-top: 5rem;
+	&__logo {
+		width: 15rem;
+	}
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
