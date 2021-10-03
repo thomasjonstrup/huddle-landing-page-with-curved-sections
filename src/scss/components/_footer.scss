@@ -1,8 +1,19 @@
 @use "../globals/colors.scss";
 
 .footer {
-	background: colors.$very-dark-cyan;
-	color: white;
+	color: colors.$very-pale-cyan;
+
+	&__graphic {
+		vertical-align: middle;
+	}
+
+	&__content {
+		background: colors.$very-dark-cyan;
+	}
+
+	h3 {
+		text-transform: uppercase;
+	}
 
 	&__logo {
 		filter: brightness(0) invert(1);

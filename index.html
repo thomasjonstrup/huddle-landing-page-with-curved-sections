@@ -48,61 +48,104 @@
 			</div>
 		</header>
 		<main>
-			<section class="growth mt-10 mb-10">
+			<section class="stats mt-10 mb-10">
 				<div class="container">
-					<div class="row">
-						<div class="img mb-3">
+					<div class="flex-row">
+						<div class="col-sm mb-3">
 							<img
-								src="./images/illustration-grow-together.svg"
-								alt="illustration-grow-together"
+								src="./images/icon-communities.svg"
+								alt="communities"
 							/>
+							<h2>1.4k+</h2>
+							<p>Communities Formed</p>
 						</div>
-						<h2>Grow Together</h2>
-						<p>
-							Generate meaningful discussions with your audience
-							and build a strong, loyal community. Think of the
-							insightful conversations you miss out on with a
-							feedback form.
-						</p>
+						<div class="col-sm">
+							<img
+								src="./images/icon-messages.svg"
+								alt="messages"
+							/>
+							<h2>2.7m+</h2>
+							<p>Messages Sent</p>
+						</div>
 					</div>
 				</div>
 			</section>
+			<section class="growth mt-10 mb-10">
+				<div class="curved curved__top"></div>
+				<div class="growth__content pb-5 pt-5">
+					<div class="container">
+						<div class="flex-row">
+							<div class="col">
+								<div class="img mb-3">
+									<img
+										src="./images/illustration-grow-together.svg"
+										alt="illustration-grow-together"
+									/>
+								</div>
+							</div>
+							<div class="col">
+								<h2>Grow Together</h2>
+								<p>
+									Generate meaningful discussions with your
+									audience and build a strong, loyal
+									community. Think of the insightful
+									conversations you miss out on with a
+									feedback form.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="curved curved__bottom"></div>
+			</section>
 			<section class="flowing mt-10 mb-10">
 				<div class="container">
-					<div class="row">
-						<div class="img mb-3">
-							<img
-								src="./images/illustration-flowing-conversation.svg"
-								alt="illustration-flowing-conversation"
-							/>
+					<div class="flex-row">
+						<div class="col">
+							<div class="img mb-3">
+								<img
+									src="./images/illustration-flowing-conversation.svg"
+									alt="illustration-flowing-conversation"
+								/>
+							</div>
 						</div>
-						<h2>Flowing Conversations</h2>
-						<p>
-							You wouldn't paginate a conversation in real life,
-							so why do it online? Our threads have just-in-time
-							loading for a more natural flow.
-						</p>
+						<div class="col">
+							<h2>Flowing Conversations</h2>
+							<p>
+								You wouldn't paginate a conversation in real
+								life, so why do it online? Our threads have
+								just-in-time loading for a more natural flow.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="your-users mt-10 mb-10">
-				<div class="container">
-					<div class="row">
-						<div class="img mb-3">
-							<img
-								src="./images/illustration-your-users.svg"
-								alt="illustration-your-users"
-							/>
+				<div class="curved curved__top"></div>
+				<div class="your-users__content pb-5 pt-5">
+					<div class="container">
+						<div class="flex-row">
+							<div class="col">
+								<div class="img mb-3">
+									<img
+										src="./images/illustration-your-users.svg"
+										alt="illustration-your-users"
+									/>
+								</div>
+							</div>
+							<div class="col">
+								<h2>Your Users</h2>
+								<p>
+									It takes no time at all to integrate Huddle
+									with your app's authentication solution.
+									This means, once signed in to your app, your
+									users can start chatting immediately.
+								</p>
+							</div>
 						</div>
-						<h2>Your Users</h2>
-						<p>
-							It takes no time at all to integrate Huddle with
-							your app's authentication solution. This means, once
-							signed in to your app, your users can start chatting
-							immediately.
-						</p>
 					</div>
 				</div>
+				<div class="curved curved__bottom"></div>
 			</section>
 			<section class="ready mt-10 mb-10">
 				<div class="container">
@@ -120,74 +163,88 @@
 
 		Subscribe--->
 		<footer class="footer">
-			<div class="container">
-				<h3 class="pt-3">Newsletter</h3>
-				<p>
-					To recieve tips on how to grow your community, sign up to
-					our weekly newsletter. We’ll never send you spam or pass on
-					your email address
-				</p>
-				<div class="input">
-					<input type="text" />
-				</div>
-				<button class="btn btn--primary btn--square mb-10">
-					Subscribe
-				</button>
-				<div class="footer__logo mb-3">
-					<img src="./images/logo.svg" alt="logo" />
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices
-					quis sem.
-				</p>
-
-				<div class="footer__info mt-3 mb-3">
-					<div class="footer__item">
-						<div class="icon">
-							<img
-								src="./images/icon-phone.svg"
-								alt="icon-phone"
-							/>
+			<img
+				src="images/bg-footer-top-desktop.svg"
+				class="m-0 footer__graphic"
+			/>
+			<div class="footer__content pb-5 pt-5">
+				<div class="container">
+					<div class="flex-row flex-reverse">
+						<div class="col">
+							<h3 class="pt-3">Newsletter</h3>
+							<p class="pt-2 pb-3">
+								To recieve tips on how to grow your community,
+								sign up to our weekly newsletter. We’ll never
+								send you spam or pass on your email address
+							</p>
+							<form class="form mb-10">
+								<div class="form__input">
+									<input type="text" />
+								</div>
+								<submit class="btn btn--primary btn--square">
+									Subscribe
+								</submit>
+							</form>
 						</div>
+						<div class="col">
+							<div class="footer__logo mb-3">
+								<img src="./images/logo.svg" alt="logo" />
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Mauris nulla quam, hendrerit
+								lacinia vestibulum a, ultrices quis sem.
+							</p>
 
-						Phone: +1-543-123-4567
-					</div>
-					<div class="footer__item">
-						<div class="icon">
-							<img
-								src="./images/icon-email.svg"
-								alt="icon-email"
-							/>
+							<div class="footer__info mt-3 mb-3">
+								<div class="footer__item">
+									<div class="icon">
+										<img
+											src="./images/icon-phone.svg"
+											alt="icon-phone"
+										/>
+									</div>
+
+									Phone: +1-543-123-4567
+								</div>
+								<div class="footer__item">
+									<div class="icon">
+										<img
+											src="./images/icon-email.svg"
+											alt="icon-email"
+										/>
+									</div>
+
+									example@huddle.com
+								</div>
+							</div>
+
+							<div class="footer__socials">
+								<a href="#facebook">
+									<i class="fab fa-facebook-square icon"></i>
+								</a>
+								<a href="#facebook">
+									<i class="fab fa-instagram icon"></i>
+								</a>
+								<a href="#facebook">
+									<i class="fab fa-twitter-square icon"></i>
+								</a>
+							</div>
 						</div>
-
-						example@huddle.com
 					</div>
-				</div>
 
-				<div class="footer__socials">
-					<a href="#facebook">
-						<i class="fab fa-facebook-square icon"></i>
-					</a>
-					<a href="#facebook">
-						<i class="fab fa-instagram icon"></i>
-					</a>
-					<a href="#facebook">
-						<i class="fab fa-twitter-square icon"></i>
-					</a>
+					<p class="attribution">
+						Challenge by
+						<a
+							href="https://www.frontendmentor.io?ref=challenge"
+							target="_blank"
+							>Frontend Mentor</a
+						>. Coded by
+						<a href="https://github.com/thomasjonstrup"
+							>Thomas Jonstrup</a
+						>.
+					</p>
 				</div>
-
-				<p class="attribution">
-					Challenge by
-					<a
-						href="https://www.frontendmentor.io?ref=challenge"
-						target="_blank"
-						>Frontend Mentor</a
-					>. Coded by
-					<a href="https://github.com/thomasjonstrup"
-						>Thomas Jonstrup</a
-					>.
-				</p>
 			</div>
 		</footer>
 		<div id="app"></div>
