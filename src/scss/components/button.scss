@@ -9,7 +9,6 @@
 	border: none;
 	transition: 0.23s ease-in-out;
 	cursor: pointer;
-	/* 	width: 100%; */
 
 	justify-content: center;
 
@@ -17,11 +16,26 @@
 		justify-content: flex-start;
 	}
  */
-	/* 	&--primary {
-		background: $bright-blue;
-		color: $very-pale-blue;
+	&--primary {
+		background: $pink;
+		padding: 15px 60px 15px 60px;
+		font-size: 1.2rem;
+		border-radius: 40px;
+		font-weight: 600;
+		color: white;
 		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-	}*/
+		&:hover {
+			background: $light-pink;
+			border: 1px solid $light-pink;
+		}
+	}
+
+	&--square {
+		border-radius: 8px;
+		font-size: 1.4rem;
+		font-weight: 700;
+		padding: 15px 40px 15px 40px;
+	}
 
 	&--border {
 		background: none;
